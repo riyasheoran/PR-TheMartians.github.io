@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Microsoft Tic Tac Toe</title>
+    <link rel="stylesheet" href="./assests/css/style.css" />
+  </head>
+
+  <body>
+    <nav>
+      <img src="./assests/img/ms-logo.png" alt="Logo" class="logo" />
+      <ul class="menu-left">
+        <li><a href="#">MICROSOFT</a></li>
+      </ul>
+      <ul class="menu-right">
+        <li id="mission-btn">Misson</li>
+        <li id="about-btn">About</li>
+        <li id="features-btn">Features</li>
+        <li id="inst-btn">Instructions</li>
+      </ul>
+    </nav>
+
+    <div class="mission-modal modal-box">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Mission</h3>
+          <button class="close">X</button>
+        </div>
+        <ul>
+          <li>
+            Engage the Crew by Using Minimax algorithm to build an unbeatable
+            Tic Tac Toe game powered by AI.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="about-modal modal-box">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>About</h3>
+          <button class="close">X</button>
+        </div>
+        <ul>
+          <li>
+            A classical tic tac toe game with the best, efficient and engaging
+            design.
+          </li>
+          <li>
+            The services that Microsoft provides to you are subject to the best
+            work.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="features-modal modal-box">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Features</h3>
+          <button class="close">X</button>
+        </div>
+        <ul>
+          <li>Try your best, but you can't beat.</li>
+          <li>Choose your own choice symbol.</li>
+          <li>Enjoy the music.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="inst-modal modal-box">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Instructions</h3>
+          <button class="close">X</button>
+        </div>
+        <ul>
+          <li>
+            Select the symbol by clicking on the respective symbol you want to
+            choose.
+          </li>
+          <li>Click in any box on the table shown in center of the screen.</li>
+          <li>Click on "PAUSE GAMESOUND" to pause the game sound.</li>
+          <li>Click on "PLAY GAMESOUND" to play the game sound.</li>
+          <li>Click on "RESTART GAME" if you wanna play again.</li>
+          <li>Reload the page if you want to start with another symbol.</li>
+          <li>ENJOY!!!</li>
+        </ul>
+      </div>
+    </div>
+
+    <h1 class="main-heading">THE MARS COLONIZATION PROGRAM</h1>
+    <h2 class="sub-heading">TIC TAC TOE</h2>
+    <main>
+      <div class="selectSym">
+        <p>Choose your symbol</p>
+        <button onClick="selectSym('X')" class="slct">X</button>
+        <button onClick="selectSym('O')" class="slct">O</button>
+      </div>
+
+      <table>
+        <tr>
+          <td class="cell" id="0"></td>
+          <td class="cell" id="1"></td>
+          <td class="cell" id="2"></td>
+        </tr>
+        <tr>
+          <td class="cell" id="3"></td>
+          <td class="cell" id="4"></td>
+          <td class="cell" id="5"></td>
+        </tr>
+        <tr>
+          <td class="cell" id="6"></td>
+          <td class="cell" id="7"></td>
+          <td class="cell" id="8"></td>
+        </tr>
+      </table>
+    </main>
+    <div id="index"></div>
+    <div class="endgame">
+      <div class="text"></div>
+    </div>
+
+    <div class="btns">
+      <button onClick="startGame()" class="btn">RESTART GAME</button>
+      <button class="btn btnPlaySound">
+        PAUSE GAMESOUND
+      </button>
+    </div>
+    <audio id="audio" src="./assests/audio/ms.mp3" loop autoplay></audio>
+    <script defer src="./assests/js/script.js"></script>
+    <script defer src="./assests/js/modal.js"></script>
+  </body>
+</html>
